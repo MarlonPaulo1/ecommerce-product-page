@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal-galery.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Sneakers">
+      </div>
+      <nav>
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>    
+      </nav>
+      <div class="cart">
+        <img class="cart-img" src="./images/icon-cart.svg" alt="Cart">
+
+        <div class="modal-cart">
+          <header>
+            <h2>Cart</h2>
+          </header>
+          <div class="products">
+            <p class="not-product">Your cart is empty.</p>
+            <div class="countainer-product">
+              <div class="content-product">
+                <img class="img-product" src="./images/image-product-1-thumbnail.jpg" alt="">
+                <div class="text">
+                  <p>Fall Limited Edition Sneakers</p>
+                  <p>$125.00 x <span class="amount-product-cart">3</span> <span class="value-product">$375.00</span></p>  
+                </div>
+                <img class="delete-content-product" src="./images/icon-delete.svg" alt="">
+              </div>
+              <button>Checkout</button>  
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="avatar">
+        <img src="./images/image-avatar.png" alt="">
+      </div>
+    </header>
+
+    <main>
+      <div class="carousel">
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="./images/image-product-1.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="./images/image-product-2.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="./images/image-product-3.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="./images/image-product-4.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="carousel__nav">
+            <button class="carousel__indicador current-slide">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            </button>
+            <button class="carousel__indicador">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="">
+            </button>
+            <button class="carousel__indicador">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="">
+            </button>
+            <button class="carousel__indicador">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="content">
+      <h4>Sneaker Company</h4>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="price">
+          <p>$125.00 <span>50%</span></p>
+          <s>$250.00</s>
+        </div>
+
+        <div class="add-cart">
+          <div class="amount">
+            <img class="btn-amount minus" src="./images/icon-minus.svg" alt="">
+            <span class="amount-product">0</span>
+            <img class="btn-amount plus" src="./images/icon-plus.svg" alt="">
+          </div> 
+          <button type="submit" class="btn-add-cart"><img src="./images/icon-cart-button.svg" alt="">Add to cart</button>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/MarlonPaulo1" target="_blank">Marlon Paulo</a>.
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-galery">
+    <div class="galery">
+      <img class="galery__button--close"  src="./images/icon-close.svg" alt="">
+
+      <button class="galery__button galery__button--left is-hidden" >
+          <img src="./images/icon-previous.svg" alt="">
+      </button> 
+
+      <div class="galery__track-container">
+          <ul class="galery__track">
+              <li class="galery__slide modal-current-slide">
+                  <img class="galery__image" src="./images/image-product-1.jpg" alt="">
+              </li>
+              <li class="galery__slide">
+                  <img class="galery__image" src="./images/image-product-2.jpg" alt="">
+              </li>
+              <li class="galery__slide">
+                  <img class="galery__image" src="./images/image-product-3.jpg" alt="">
+              </li>
+              <li class="galery__slide">
+                  <img class="galery__image" src="./images/image-product-4.jpg" alt="">
+              </li>
+          </ul>
+      </div>
+
+      <button class="galery__button galery__button--right">
+          <img src="./images/icon-next.svg" alt="">
+      </button>
+
+      <div class="galery__nav">
+          <button class="galery__indicador modal-current-slide">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          </button>
+          <button class="galery__indicador">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="">
+          </button>
+          <button class="galery__indicador">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="">
+          </button>
+          <button class="galery__indicador">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="">
+          </button>
+      </div>
+  </div>
+  </div>
+
+
+  <script src="./scripts/cart.js"></script>
+  <script src="./scripts/slideProduct.js" ></script>
+</body>
+</html>
